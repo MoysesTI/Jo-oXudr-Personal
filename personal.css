@@ -941,7 +941,7 @@ hr{
         min-width: 100vh;
     }
     .container-first h2{
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
     .container-first .btn-one,.btn-two{
@@ -952,6 +952,7 @@ hr{
     .container-first p{
         font-size: 0.9rem;
         text-align: center;
+        /* display: none; */
         width: 300px;
     }
  
@@ -1065,28 +1066,33 @@ hr{
         height: 50%;
         width: 100%;
         left:0; 
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
     .container-first{
-        width: 100%;
-        background-color: #213134;
+       min-width: 100%;
+        background-color: rgb(24, 42, 43);
         height: 100%;
-        border-radius: 100px;
         margin: 0;
         padding: 10% 10%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset, rgba(0, 0, 0, 0.3) 0px -50px 36px -28px inset, rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
-    .text-one h2{
-        color: #14A1AA;
+    
+    .text-one h2, buttonm, .text-one{
+        display: none;
+    }
+    .text-two{
+        text-align: center;
+    }
+    .butoon-postion{
+        display: block;
+        text-align: center;
     }
     .text-two h2{
         color: #14A1AA;
     }
-    .text-one p{
-        width: 250px;
-        font-size: 1rem;
-    }
     .text-two p{
-        width: 250px;
-        font-size: 1rem;
+        width: 100%;
+        font-size: 1.3rem;
     }
 
     main{
