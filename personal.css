@@ -20,7 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 100%;
+    min-width: 100vh;
     position:absolute;
     z-index:3;
     padding-right: 60px;
@@ -150,7 +150,7 @@ button{
 
  /*Container-Two */
 
- .container-two {
+.container-two {
     min-width: 100vh;
     background-color: rgb(78, 97, 101);
     min-height:250px;
@@ -698,9 +698,6 @@ hr{
     /* responsive */
 
 @media(min-width: 1920px){
-    header{
-        margin: 0 0;
-    }
 
     .logo{
         max-width:360px;
@@ -819,7 +816,7 @@ hr{
 
     .sticky {
             position: fixed;
-            width: 100%;
+            min-width: 100%;
             background-color: #1D2F32;
             height: 150px;
     }
@@ -918,14 +915,148 @@ hr{
     width: 100vh;
 }
 }
-@media(max-width: 577px){
-    .footer-col{
-    width: 100%;
-}
-.row-rodape{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 
+@media(min-width: 320px){
+    .container-work-evolution{
+        grid-template-columns: repeat(1, 0fr);
+        height: auto;
+        row-gap: 20px;
+        width: auto;
+    }
+    .container-three{
+        min-width: 100%;
+        height: 100%;
+        background-color: #213134;
+    }
+    .footer-distributed .footer-left{
+        width:100%;
+    }
+    
+     /*Footer left */
+    .footer-distributed{
+        min-width: 100%;
+        text-align: center;
+        padding: 10 0;
+    }
+    .footer-company-about{
+        width: 100%;
+    }
+    .footer-icons{
+        padding-left: 40px;
+    }
+
+    .footer-distributed h3{
+        color:  #ffffff;
+        font: normal 36px 'Open Sans', cursive;
+        margin: auto;
+    }
+    
+    .footer-distributed h3 span{
+        color:  lightseagreen;
+    }
+    
+    /* Footer links */
+    
+    .footer-distributed .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+        padding: auto;
+    }
+    
+    .footer-distributed .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        font-weight:400;
+        text-decoration: none;
+        color:  inherit;
+    }
+    
+    .footer-distributed .footer-company-name{
+        color:  #807e7e;
+        font-size: 14px;
+        font-weight: normal;
+        margin: auto;
+    }
+    .box-works{
+        max-width: 400px;
+    }
+    .box-works img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .container-two {
+        min-width: 100%;
+        background-color: rgb(78, 97, 101);
+        min-height:250px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    header{
+        max-width: 100%;
+    }
+    .sticky {
+        position: absolute;
+        min-width: 20%;
+        background-color: #1D2F32;
+        height: 150px;
+    }
+    .container-card{
+        padding: 5% 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .tittle-three{
+        width: 100%;
+        padding: 10px;
+    }
+    .tittle-three h1{
+        color: #14A1AA;
+        font-size: 26px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .joaoXudre{
+        position: relative;
+        top: 0;
+        height: 50%;
+        width: 100%;
+        left:0; 
+    }
+    .container-first{
+        width: 100%;
+        background-color: #213134;
+        height: 100%;
+        border-radius: 100px;
+        margin: 0;
+        padding: 10% 10%;
+    }
+    .text-one h2{
+        color: #14A1AA;
+    }
+    .text-two h2{
+        color: #14A1AA;
+    }
+    .text-one p{
+        width: 250px;
+        font-size: 1rem;
+    }
+    .text-two p{
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    main{
+        min-width: 100%;
+        min-height: 1;
+        background: rgb(24,43,44);
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
 }
+
