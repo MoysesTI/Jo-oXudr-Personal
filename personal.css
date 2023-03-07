@@ -303,7 +303,6 @@ button{
 
 
 .formularioContato { 
-
     max-width:500px; 
     height:auto; 
     float:none; 
@@ -334,7 +333,7 @@ button{
 
 .formularioContato label input  { 
 
-    font-size:1em; 
+    font-size:1rem; 
     color:#555; 
     font-family:'open_sansregular'; 
     outline:none; 
@@ -1069,7 +1068,7 @@ hr{
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
     .container-first{
-       min-width: 100%;
+        min-width: 100%;
         background-color: rgb(24, 42, 43);
         height: 100%;
         margin: 0;
@@ -1104,5 +1103,29 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
     }
+    .formularioContato { 
+        max-width:400px; 
+        padding: 10px;
+    }
+
+    .formularioContato label input  { 
+        font-size:.6rem; 
+    }
+    .formularioContato label textarea{
+        font-size: .6rem;
+    }
+    .formularioContato label select { 
+        width: 75%;
+        font-size:.6em; 
+        color:#555; 
+        border:1px #dee5ed solid; 
+        border-radius:4px; 
+        padding:0.6em; 
+        outline:none; 
+        transition: 0.3s;  
+    
+    }
 }
+
+
 
