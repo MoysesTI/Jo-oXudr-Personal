@@ -42,9 +42,8 @@ nav .nav-a{
     font-size: 1.3rem;
     color: #ffffff;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
-
 li{
     list-style: none;
 }
@@ -57,7 +56,9 @@ nav .nav-a:hover{
 
 } 
 
-
+.navBar{
+    z-index: 3;
+}
 
 /* Container-First */
 .joaoXudre{
@@ -822,8 +823,7 @@ hr{
             min-width: 100%;
             background-color: #1D2F32;
             height: 150px;
-    }
-        
+    }    
     .sticky + .content {
             padding-top:102px;
     }
@@ -837,7 +837,8 @@ hr{
         height: auto;
         flex-direction: column;
         transition: 1s;
-        border: #020202 1px solid;
+        border-top: none;
+        border: 1px solid #14A1AA;
     }
     .menu-closer{
         display: block;
@@ -1035,6 +1036,7 @@ hr{
     header{
         max-width: 100%;
         position: absolute;
+        border-bottom: solid 1px  #14A1AA;
     }
     .sticky {
         position: fixed;
@@ -1066,6 +1068,7 @@ hr{
         width: 100%;
         left:0; 
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        padding-top: 200px;
     }
     .container-first{
         min-width: 100%;
@@ -1126,6 +1129,3 @@ hr{
     
     }
 }
-
-
-

@@ -20,7 +20,6 @@ produtos.addEventListener('click', ()=>{
 
     let header = document.querySelector('header');
     var sticky = header.offsetTop;
-    let joaoXudre = document.querySelector('.joaoXudre')
     function myFunction() {
         if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
@@ -35,6 +34,7 @@ function menu(){
         navbars.classList.remove('off_End_Onn');
         header.classList.add("sticky");
     }else{
+
         header.classList.remove("sticky");
         navbars.classList.add('off_End_Onn');
     }
