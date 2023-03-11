@@ -859,7 +859,7 @@ hr{
         display: none;
     }
     #menuBtn{
-        display: flex;
+        display: inline-flex;
     }
 }
 @media (max-width: 880px) {
