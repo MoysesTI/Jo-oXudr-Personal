@@ -13,7 +13,8 @@ const produtos = document.querySelector('.planos-sell')
 produtos.addEventListener('click', ()=>{
     document.querySelector('.produtos').style.display = 'block'
     document.querySelector('main').style.display = 'none'
-    
+    header.classList.remove("sticky");
+    navbars.classList.add('off_End_Onn');
 })
 
     window.onscroll = function() {myFunction()};

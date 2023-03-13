@@ -1151,13 +1151,16 @@ hr{
     }
 
     .carousel-text h1{
-        color:#14A1AA;
+        color:#ffffff;
         font-size: 1.3rem;
         font-family: 'Racing Sans One', cursive;
     } 
     .carousel-text p{
-        color: #14A1AA;
+        color: #ffffff;
         font-size: 1rem;
         font-family: 'Gloock', serif;
     } 
+    .carousel-text{
+        
+    }
 }
