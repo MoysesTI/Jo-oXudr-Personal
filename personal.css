@@ -634,6 +634,7 @@ textarea, select{
         margin-bottom: 20px;
     }
     
+  
     .footer-distributed .footer-icons{
         margin-top: 25px;
     }
@@ -649,7 +650,6 @@ textarea, select{
         color: #020202;
         text-align: center;
         line-height: 35px;
-    
         margin-right: 3px;
         margin-bottom: 5px;
     }
@@ -889,6 +889,7 @@ hr{
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
+        
     }
 
     .footer-distributed .footer-center i{
@@ -935,6 +936,9 @@ hr{
         max-width: 300px;
         max-height: 300px;
     }
+    .footer-center div:first-child p {
+        max-width:200px;
+    }
 }
 
 @media(max-width: 768px){
@@ -968,7 +972,15 @@ hr{
         /* display: none; */
         width: 300px;
     }
- 
+        .footer-center div:first-child p {
+            width: 150px;
+        }
+        .footer-center div:nth-child(2) p {
+            width: 150px;
+        }
+        .footer-center div:last-child p {
+            width: 150px;
+        }
     .container-work-evolution{
         grid-template-columns: repeat(1, 2fr);
         height: auto;
@@ -994,10 +1006,6 @@ hr{
     .footer-company-about{
         width: 100%;
     }
-    .footer-icons{
-        padding-left: 40px;
-    }
-
     .footer-distributed h3{
         color:  #ffffff;
         font: normal 36px 'Open Sans', cursive;
@@ -1160,7 +1168,4 @@ hr{
         font-size: 1rem;
         font-family: 'Gloock', serif;
     } 
-    .carousel-text{
-        
-    }
 }
