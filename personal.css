@@ -862,6 +862,19 @@ hr{
     #menuBtn{
         display: inline-flex;
     }
+    .produtos{
+        min-width: 100%;
+        height: auto;
+        position: relative;
+        display: none;
+    }
+    .product-carousel img{
+            animation: anim-stars 30s linear infinite;
+            width: 100%;
+            min-height: 450px;
+    }
+    
+
 }
 @media (max-width: 880px) {
     
@@ -886,7 +899,7 @@ hr{
     main{
         padding-top: 100px;
         min-width: 100%;
-        min-height: auto;
+        min-height: 100vh;
     }
     header{
         min-width: 100%;
@@ -1036,7 +1049,6 @@ hr{
     header{
         max-width: 100%;
         position: absolute;
-        border-bottom: solid 1px  #14A1AA;
     }
     .sticky {
         position: fixed;
@@ -1128,4 +1140,24 @@ hr{
         transition: 0.3s;  
     
     }
+}
+
+@media(max-width: 425px){
+    .text-product button{
+        width: 6rem;
+        font-size: 0.8rem;
+        height: 1.5rem;
+        border-radius: 3px;
+    }
+
+    .carousel-text h1{
+        color:#14A1AA;
+        font-size: 1.3rem;
+        font-family: 'Racing Sans One', cursive;
+    } 
+    .carousel-text p{
+        color: #14A1AA;
+        font-size: 1rem;
+        font-family: 'Gloock', serif;
+    } 
 }
