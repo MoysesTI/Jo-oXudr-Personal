@@ -6,6 +6,8 @@ contact.addEventListener('click', ()=>{
 
 menuCloser.addEventListener('click', ()=>{
     document.querySelector('.forms-container').style.display = 'none'
+    header.classList.remove("sticky");
+    navbars.classList.add('off_End_Onn');
 })
 
 const nav =  document.querySelector('.nav-a')
