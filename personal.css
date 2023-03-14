@@ -12,6 +12,9 @@ body{
     position: relative;
     font-family: Monospace;
 }
+
+
+/* Header da pagina/logo/navbar */
 .logo{
     cursor: pointer;
     width: 200px;
@@ -55,12 +58,11 @@ nav .nav-a:hover{
     color: #14A1AA;
 
 } 
-
 .navBar{
     z-index: 3;
 }
 
-/* Container-First */
+/* Container-First  Joao xudre informações*/
 .joaoXudre{
         position: absolute;
         top: 0;
@@ -150,7 +152,7 @@ button{
 }
 
 
- /*Container-Two */
+/*Container-Two segundo conteudo informativo*/
 
 .container-two {
     min-width: 100vh;
@@ -177,7 +179,7 @@ button{
     font-size: 1rem;
     color: #ffffff;
 }
-/* Container-Three */
+/* Container-Three/ Treino e habitos */
 
 .container-three{
     min-width: 100vh;
@@ -250,7 +252,7 @@ button{
 }
 
 
-
+/* Wpp block na pagina */
 .wpp{
     position:fixed;
     width:60px;
@@ -286,7 +288,9 @@ button{
 
 
 /* Fomulario */
-
+.inputs-forms{
+    display: inline-flex;
+}
 .forms-container{
     position: fixed;
     left: 0;
@@ -413,7 +417,7 @@ textarea, select{
 }
 
 
-/* Produtos */
+/* Produtos para sell*/
 
 .produtos{
     min-width: 100vh;
@@ -487,9 +491,8 @@ textarea, select{
     color:white;
 }
 
-
     .bi:hover{
-        color:rgb(37,174,230)d;
+        fill:rgb(37,174,230)d;
     }
     .footer-distributed{
         background: #081518;
