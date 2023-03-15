@@ -1,45 +1,64 @@
 const contact = document.querySelector('.contact')
 const menuCloser = document.querySelector('.menu-closer')
+const nav =  document.querySelector('.nav-a')
+const produtos = document.querySelector('.planos-sell')
+const navbars = document.querySelector('.navBar');
+
 contact.addEventListener('click', ()=>{
     document.querySelector('.forms-container').style.display = 'flex'
 })
 
 menuCloser.addEventListener('click', ()=>{
     document.querySelector('.forms-container').style.display = 'none'
-    header.classList.remove("sticky");
-    navbars.classList.add('off_End_Onn');
+    headeradd()
+    ofEndOn()
 })
 
-const nav =  document.querySelector('.nav-a')
-const produtos = document.querySelector('.planos-sell')
+
 produtos.addEventListener('click', ()=>{
     document.querySelector('.produtos').style.display = 'block'
     document.querySelector('main').style.display = 'none'
-    header.classList.remove("sticky");
-    navbars.classList.add('off_End_Onn');
+    headeraRemove()
+    ofEndOn()
 })
 
+// onscroll header color sed
     window.onscroll = function() {myFunction()};
-
     let header = document.querySelector('header');
     var sticky = header.offsetTop;
     function myFunction() {
         if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
+            headeradd()
         } else {
-                header.classList.remove("sticky");
-                navbars.classList.add('off_End_Onn');
+            headeraRemove()
+            ofEndOn()
         }
 }
-const navbars = document.querySelector('.navBar');
+
+// navegation
+
 function menu(){
     if(navbars.classList.contains('off_End_Onn')){
-        navbars.classList.remove('off_End_Onn');
-        header.classList.add("sticky");
+        ofEndof()
+        headeradd()
     }else{
-
-        header.classList.remove("sticky");
-        navbars.classList.add('off_End_Onn');
+        headeraRemove()
+        ofEndOn()
     }
 }
 
+
+const ofEndOn = () =>{
+    navbars.classList.add('off_End_Onn');
+}
+const ofEndof = () =>{
+    navbars.classList.remove('off_End_Onn');
+}
+
+const headeradd = ()=>{
+    header.classList.add("sticky");
+}
+
+const headeraRemove= ()=>{
+    header.classList.remove("sticky");
+}
