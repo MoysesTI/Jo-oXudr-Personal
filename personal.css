@@ -500,7 +500,7 @@ textarea, select{
     width: 100%;
     min-height: 100%;
     background-color: rgb(11, 25, 28);
-    display: grid;
+    display: none;
     place-items: center;
     position: relative;
 }
@@ -508,6 +508,9 @@ textarea, select{
     max-width:700px;
     height: auto;
     margin: 10% 10%;
+}
+.Faq-frequentes{
+cursor: pointer;
 }
 .faq-Container h1{
 position:absolute;
@@ -550,6 +553,7 @@ font-family: 'Racing Sans One', cursive;
 .accordion-button::after{
     background-image: var(--accordion-button-icon) !important;
 }
+
 
 /* Footer da pagina */
     .footer-distributed{
@@ -1208,14 +1212,14 @@ hr{
     }
     .faq-Container h1{
         position:absolute;
-        right: 0;
-        top: 3%;
+        top: 5%;
+        left: 3%;
         color: #14A1AA;
         font-size: 1.2rem;
         font-family: 'Racing Sans One', cursive;
         }
     .linha-faq{
-        top: 10%;
+        top: 13%;
     }
    
 }

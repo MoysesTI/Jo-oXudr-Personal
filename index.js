@@ -3,9 +3,12 @@ const menuCloser = document.querySelector('.menu-closer')
 const nav =  document.querySelector('.nav-a')
 const produtos = document.querySelector('.planos-sell')
 const navbars = document.querySelector('.navBar');
-
+const Faqfrequentes = document.querySelector('.Faq-frequentes')
 contact.addEventListener('click', ()=>{
     document.querySelector('.forms-container').style.display = 'flex'
+})
+Faqfrequentes.addEventListener('click', ()=>{
+    document.querySelector('.faq-Container').style.display = 'grid'
 })
 
 menuCloser.addEventListener('click', ()=>{
